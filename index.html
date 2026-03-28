@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishant Weather Pro</title>
+    <title>Nishant Weather App</title>
     <link rel="stylesheet" href="ruhela.css">
 </head>
 <body>
     <div class="container">
         <div class="weather-card">
             <div class="search-box">
-                <input type="text" class="search-input" placeholder="Search City...">
-                <button class="search-btn">🔍</button>
+                <input type="text" id="cityInput" class="search-input" placeholder="Enter City Name...">
+                <button id="searchBtn" class="search-btn">🔍</button>
             </div>
-
             <div class="weather-info">
-                <h2 class="city-name">Detecting...</h2>
-                <img src="" alt="" class="weather-icon">
-                <h1 class="temp">--°C</h1>
-                <p class="description">Waiting for location...</p>
+                <h2 id="cityName" class="city-name">Detecting...</h2>
+                <img id="weatherIcon" src="" alt="" class="weather-icon">
+                <h1 id="tempDisplay" class="temp">--°C</h1>
+                <p id="description" class="description">Waiting for location...</p>
             </div>
         </div>
     </div>
