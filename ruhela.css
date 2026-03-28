@@ -1,0 +1,30 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: linear-gradient(to bottom, #3482B5, #5196C1);
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container { width: 100%; max-width: 400px; padding: 20px; }
+.header #region { font-size: 14px; opacity: 0.9; }
+.location-row { display: flex; align-items: center; gap: 10px; margin-top: 5px; }
+.main-weather { margin-top: 20px; }
+#temp { font-size: 85px; font-weight: 300; margin-bottom: 10px; }
+.aqi-badge { background: #8BC34A; color: black; padding: 4px 10px; border-radius: 4px; display: inline-block; font-size: 13px; font-weight: bold; }
+.search-section { display: flex; gap: 5px; margin: 20px 0; }
+.search-section input { flex: 1; padding: 10px; border-radius: 8px; border: none; outline: none; }
+.search-section button { padding: 10px; border-radius: 8px; border: none; cursor: pointer; background: white; color: #3482B5; }
+.weather-banner { background: white; color: #3482B5; padding: 12px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.play-btn { background: #1A5E8E; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; }
+.sun-row { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 5px; }
+.hourly-forecast { display: flex; overflow-x: auto; gap: 20px; padding: 10px 0; }
+.hourly-forecast::-webkit-scrollbar { display: none; }
+.hour-item { text-align: center; min-width: 60px; }
+.hour-item p { font-size: 12px; margin-bottom: 5px; }
+.hour-item h3 { margin: 5px 0; font-weight: 400; }
+.hour-item img { width: 35px; }
+.rain-info { font-size: 11px; display: block; color: #E0F2F1; }
