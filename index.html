@@ -3,42 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishant's Weather App</title>
+    <title>Nishant Weather Pro</title>
     <link rel="stylesheet" href="ruhela.css">
 </head>
 <body>
+    <div class="container">
+        <div class="weather-card">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search City...">
+                <button class="search-btn">🔍</button>
+            </div>
 
-    <div class="app-container">
-        <div class="header">
-            <p id="region">Fetching Location...</p>
-            <div class="location-row">
-                <h2 id="cityName">---</h2>
-                <button onclick="getMyLocation()" class="loc-btn">📍</button>
+            <div class="weather-info">
+                <h2 class="city-name">Loading...</h2>
+                <img src="" alt="icon" class="weather-icon">
+                <h1 class="temp">--°C</h1>
+                <p class="description">Please allow location</p>
+            </div>
+
+            <div class="details-grid">
+                <div class="detail-item">
+                    <span>90 Min. Weather</span>
+                    <p class="rain-prediction">Clear Sky</p>
+                </div>
             </div>
         </div>
-
-        <div class="main-weather">
-            <h1 id="temp">--°</h1>
-            <div class="aqi-badge" id="aqi-box">AQI --</div>
-        </div>
-
-        <div class="search-section">
-            <input type="text" id="cityInput" placeholder="Search City...">
-            <button onclick="getWeather()">🔍</button>
-        </div>
-
-        <div class="weather-banner">
-            <span>90 Min. Weather: <strong id="mini-desc">--</strong></span>
-            <button class="play-btn">▶</button>
-        </div>
-
-        <div class="sun-row">
-            <span>today</span>
-            <span id="sun-times">☀️ ↑ -- AM  ↓ -- PM</span>
-        </div>
-
-        <div class="hourly-forecast" id="forecastContainer">
-            </div>
     </div>
 
     <script src="rajput.js"></script>
